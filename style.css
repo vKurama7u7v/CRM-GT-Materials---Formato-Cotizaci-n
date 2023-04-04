@@ -1,0 +1,138 @@
+:root {
+    --primary: #58A058;
+    --size-sm: 8px;
+    --size-md: 10px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main.container {
+    width: 100%;
+    height: 100%;
+    background: #eeeeee;
+    padding: 1em;
+}
+
+section.document {
+    position: relative;
+    width: 612px;
+    height: 792px;
+
+    margin: 0 auto;
+    padding: 0px 65px;
+    padding-top: 44px;
+
+    background: #fff;
+}
+
+/* Header */
+header .flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .info-header {
+    font-size: var(--size-sm);
+    display: grid;
+    font-weight: 500;
+    gap: .2em;
+}
+
+header .description {
+    padding-top: 2.5em;
+}
+
+header .description p {
+    font-size: var(--size-md);
+    padding-bottom: 2em;
+}
+
+/* Table */
+table,
+td,
+th {
+    border: 1px solid #212121;
+}
+
+table {
+    position: relative;
+    width: 100%;
+    /* outline: 1px solid #212121; */
+}
+
+table .row .colname {
+    background: #e1e1e1;
+    padding: 5px;
+    text-align: center;
+    font-weight: 700;
+}
+
+table .row .col {
+    padding: 5px;
+}
+
+.table .tot {
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+}
+
+/* Footer */
+
+footer.footer {
+    position: absolute;
+    width: 100%;
+
+    padding: 0px 65px;
+
+    bottom: 30px;
+    left: 0;
+    right: 0;
+}
+
+footer .flex {
+    align-items: end;
+    justify-content: space-between;
+    font-size: var(--size-sm);
+}
+
+footer .info-footer {
+    display: grid;
+    font-weight: 500;
+    gap: .2em;
+    text-align: right;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.color-primary {
+    color: var(--primary);
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.text-md {
+    font-size: var(--size-md);
+}
